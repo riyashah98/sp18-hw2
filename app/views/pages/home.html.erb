@@ -34,4 +34,12 @@
 <!-- CONFUSING CODE, DO NOT MODIFY -->
 <!-- CONFUSING CODE, DO NOT MODIFY -->
 
-
+<%= form_tag me_path do %>
+  <%= label_tag :name, "Your name:" %>
+  <%= text_area_tag :name %>
+  <%= label_tag :year, "Your year:" %>
+  <%= text_area_tag :age %>
+    <%= label_tag :hometowm, "hometown:" %>
+  <%= text_area_tag :hometown %>
+  <%= submit_tag "Submit!" %>
+<% end %>
